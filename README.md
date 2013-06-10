@@ -8,6 +8,16 @@ MessageParser can load bad word definitions from either a database table or from
 
 ### Installing
 
+- Add gamurs/message-parser to your composer.json:
+
+	```json
+	"require": {
+		...
+		"gamurs/message-parser": "dev-master"
+		...
+    },
+	```
+
 - Add MessageParser to your providers list in app/config/app.php:
 
 	```php
