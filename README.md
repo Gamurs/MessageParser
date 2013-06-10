@@ -10,26 +10,34 @@ MessageParser can load bad word definitions from either a database table or from
 
 - Add MessageParser to your providers list in app/config/app.php:
 
+	```php
 	'providers' => array(
 		...
 		'Gamurs\MessageParser\MessageparserServiceProvider',
 		...
 	),
+	```
 
 - __(Optional)__ Add Parser to your aliases list in app/config/app.php:
 
+	```php
 	'aliases'   => array(
 	...
 		'Parser'      => 'Gamurs\MessageParser\Facades\Parser',
 	),
+	```
 
 - __(Optional)__ Run the included migration to create the badowrds table in you DB:
 
+	```php
 	php artisan migrate --package=gamurs/message-parser
+	```
 
 - __(Optional)__ Publish and edit the configuration:
 
+	```php
 	php artisan config:publish gamurs/message-parser
+	```
 
 ### Parsing Messages
 
@@ -37,11 +45,13 @@ If you've followed the steps above and added Parser as an alias, go ahead and ad
 
 Now you can easily parse a message like so:
 
-	$message = Parser::filterBadWords($message);
+```php
+$message = Parser::filterBadWords($message);
+```
 
 ## License
 
-MessageParser is released under the (http://opensource.org/licenses/mit-license.php)[MIT License].
+MessageParser is released under the [http://opensource.org/licenses/mit-license.php](MIT License).
 
 Copyright (c) 2013 Gamurs
 
