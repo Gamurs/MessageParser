@@ -5,9 +5,17 @@
     "authors": [
         {
             "name": "Euan Torano",
-            "email": "euantorano@gmail.com"
+            "email": "euantorano@gmail.com",
+            "homepage" : "http://www.euantor.com",
+            "role" : "Developer"
         }
     ],
+    "keywords": [
+        "laravel",
+        "parse",
+        "parser"
+    ],
+    "url" : "http://www.gamurs.net",
     "require": {
         "php": ">=5.3.0",
         "illuminate/support": "4.0.x"
