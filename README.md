@@ -23,7 +23,7 @@ MessageParser can load bad word definitions from either a database table or from
 	```php
 	'providers' => array(
 		...
-		'Gamurs\MessageParser\MessageparserServiceProvider',
+		'Gamurs\MessageParser\MessageParserServiceProvider',
 		...
 	),
 	```
